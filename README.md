@@ -1,4 +1,4 @@
-# Debian Server Set Up for Django Instruction
+# Debian 12 Server Set Up for Django Instruction
 
 In this guide we will set up clean Debian server for Python and Django projects. We will configure secure SSH connection, install from Debian repositories and from sources all needed packages and ware it together for working Debian Django server.
 
