@@ -10,7 +10,7 @@ Connect through SSH to remote Debian server and update repositories and install 
 
 ```
 sudo apt-get update ; \
-sudo apt-get install -y vim mosh tmux htop git curl wget unzip zip gcc build-essential make
+sudo apt-get install -y vim mosh tmux htop git curl wget unzip zip gcc build-essential make curl
 ```
 
 Configure SSH:
