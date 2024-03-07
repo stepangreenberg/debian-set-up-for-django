@@ -38,7 +38,8 @@ sudo apt-get install -y zsh tree redis-server nginx zlib1g-dev libbz2-dev librea
 Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):
 
 ```
-sudo apt-get install curl
+sudo apt-get install -y curl
+sudo apt-get install -y git
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
