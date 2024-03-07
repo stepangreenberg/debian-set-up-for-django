@@ -10,7 +10,7 @@ Connect through SSH to remote Debian server and update repositories and install 
 
 ```
 sudo apt-get update ; \
-sudo apt-get install -y vim mosh tmux htop git curl wget unzip zip gcc build-essential make curl
+sudo apt-get install -y vim mosh tmux htop git curl wget unzip zip gcc build-essential make
 ```
 
 Configure SSH:
@@ -38,6 +38,7 @@ sudo apt-get install -y zsh tree redis-server nginx zlib1g-dev libbz2-dev librea
 Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):
 
 ```
+sudo apt-get install curl
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
