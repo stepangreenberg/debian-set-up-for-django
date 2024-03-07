@@ -51,26 +51,27 @@ vim ~/.zshrc
     alias cls="clear"
 ```
 
-## Install python 3.7
+## Install python 3.12.2
 
 mkdir ~/code
 
-Build from source python 3.7, install with prefix to ~/.python folder:
+Build from source python 3.12.2, install with prefix to ~/.python folder:
 
 ```
-wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz ; \
-tar xvf Python-3.7.* ; \
-cd Python-3.7.3 ; \
+sudo apt-get install -y wget ; \
+wget https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz ; \
+tar xvf Python-3.12.* ; \
+cd Python-3.12.2 ; \
 mkdir ~/.python ; \
 ./configure --enable-optimizations --prefix=/home/www/.python ; \
 make -j8 ; \
 sudo make altinstall
 ```
 
-Now python3.7 in `/home/www/.python/bin/python3.7`. Update pip:
+Now python3.12 in `/home/www/.python/bin/python3.12`. Update pip:
 
 ```
-sudo /home/www/.python/bin/python3.7 -m pip install -U pip
+sudo /home/www/.python/bin/python3.12.2 -m pip install -U pip
 ```
 
 Ok, now we can pull our project from Git repository (or create own), create and activate Python virtual environment:
@@ -79,7 +80,7 @@ Ok, now we can pull our project from Git repository (or create own), create and 
 cd code
 git pull project_git
 cd project_dir
-python3.7 -m venv env
+python3.12.2 -m venv env
 . ./env/bin/activate
 ```
 
